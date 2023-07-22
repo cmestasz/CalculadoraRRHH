@@ -1,0 +1,22 @@
+.calculator {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Times New Roman"; 
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+button {
+    width: 80px;
+    height: 60px;
+    margin: 2px;
+    font-size: 20px;
+    font-family: "Courier New", "Times New Roman"; 
+}
