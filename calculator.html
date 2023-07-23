@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Calculadora</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="calculator">
-        <div class="output">
-            <span id="input" class="result" style="white-space: pre-wrap;">Ingrese una expresion...</span>
-        </div>
-        <div class="output">
-            <span id="result" class="result" style="white-space: pre-wrap;">Resultado</span>
-        </div>
-        <div class="buttons">
-            <button onclick="clearResult()">C</button>
-            <button onclick="addValue('(')">(</button>
-            <button onclick="addValue(')')">)</button>
-            <button onclick="addOperator('/')">/</button>
-            <button onclick="addValue(7)">7</button>
-            <button onclick="addValue(8)">8</button>
-            <button onclick="addValue(9)">9</button>
-            <button onclick="addOperator('*')">*</button>
-            <button onclick="addValue(4)">4</button>
-            <button onclick="addValue(5)">5</button>
-            <button onclick="addValue(6)">6</button>
-            <button onclick="addOperator('-')">-</button>
-            <button onclick="addValue(1)">1</button>
-            <button onclick="addValue(2)">2</button>
-            <button onclick="addValue(3)">3</button>
-            <button onclick="addOperator('+')">+</button>
-            <button onclick="addValue(0)">0</button>
-            <button onclick="calculate()">=</button>
-        </div>
+      <div class="output">
+        <span
+          id="input"
+          class="result initial-value"
+          style="white-space: pre-wrap"
+          >Ingrese una expresion...</span
+        >
+      </div>
+      <div class="output">
+        <span
+          id="result"
+          class="result initial-value"
+          style="white-space: pre-wrap"
+          >Resultado</span
+        >
+      </div>
+      <div class="buttons">
+        <button onclick="clearResult()">C</button>
+        <button onclick="addValue('(')">(</button>
+        <button onclick="addValue(')')">)</button>
+        <button onclick="addOperator('/')">/</button>
+        <button onclick="addValue(7)">7</button>
+        <button onclick="addValue(8)">8</button>
+        <button onclick="addValue(9)">9</button>
+        <button onclick="addOperator('*')">*</button>
+        <button onclick="addValue(4)">4</button>
+        <button onclick="addValue(5)">5</button>
+        <button onclick="addValue(6)">6</button>
+        <button onclick="addOperator('-')">-</button>
+        <button onclick="addValue(1)">1</button>
+        <button onclick="addValue(2)">2</button>
+        <button onclick="addValue(3)">3</button>
+        <button onclick="addOperator('+')">+</button>
+        <button onclick="addOperator('.')">.</button>
+        <button onclick="addValue(0)">0</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="clearLast()"><-</button>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
