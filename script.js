@@ -19,6 +19,7 @@ function updateOpacity() {
 function addValue(value) {
   currentValue += value;
   document.getElementById("input").textContent = currentValue;
+  calculated = false;
   updateResult();
   updateOpacity();
 }
@@ -26,6 +27,7 @@ function addValue(value) {
 function addOperator(operator) {
   if (currentValue !== "") {
     currentValue += operator;
+    calculated = false;
     updateResult();
   }
 }
